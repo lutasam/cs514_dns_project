@@ -15,7 +15,7 @@
 //	cacheMutex  sync.RWMutex
 //	cacheTTL    = 10 * time.Minute
 //	cachePurge  = 15 * time.Minute
-//	upstreamDNS = "8.8.8.8:53"
+//	upstreamDNS = "1.1.8.8:53"
 //)
 //
 //
@@ -114,7 +114,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/miekg/dns"
+	"cool_diy_dns_server/dns"
 	"github.com/patrickmn/go-cache"
 )
 
@@ -124,7 +124,7 @@ var (
 	cacheMutex  sync.RWMutex
 	cacheTTL    = 10 * time.Minute
 	cachePurge  = 15 * time.Minute
-	upstreamDNS = "8.8.8.8:53"
+	upstreamDNS = "208.67.222.222:53"
 )
 
 func init() {
